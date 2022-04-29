@@ -28,3 +28,5 @@ brew update
 # Install brewfile
 brew tap homebrew/bundle
 brew bundle --file $HOME/.dotfiles/Brewfile
+
+brew cleanup
