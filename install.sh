@@ -30,3 +30,9 @@ brew tap homebrew/bundle
 brew bundle --file $HOME/.dotfiles/Brewfile
 
 brew cleanup
+
+# Replace .vimrc
+rm -rf $HOME/.vimrc
+ln -s $HOME/.dotfiles/.vimrc $HOME/.vimrc
+mkdir -p $HOME/.vim/colors
+mv $HOME/.dotfiles/vim/colors/* $HOME/.vim/colors
